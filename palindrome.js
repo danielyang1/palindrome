@@ -12,16 +12,13 @@ function reversed(palindrome){
     return newWord;
 }
 
-function checkPal(palindromeReversed, palindrome) {
- 	var awesomeWord;
- 	var finalThing;
- 	awesomeWord = (palindrome.split("").reverse().join(""));
- 	if (palindrome === awesomeWord) {
+function checkPal(palindromeReversed, palindrome) { 	
+ 	if (palindrome === palindromeReversed) {
  		alert("Yes. Tis a Palindrome!");
  	} else {
  		alert("No. Are you kidding me?");
- 		main();
  	}
+ 	main();
 }
 
 function main() {
@@ -30,7 +27,7 @@ function main() {
 	var palindromeReversed;
 	var result;
 	var ending;
-	var palindromeReversed;
+
 	palMessage = "Is it a palindrome?";
 	palindrome = getUserInput(palMessage);
 	palindromeReversed = reversed(palindrome);
